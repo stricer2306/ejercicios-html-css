@@ -1,6 +1,6 @@
 #Tema 2 HTML Y CSS
 
-El contenido es los trabajos que hemos hecho en clase
+El contenido de los trabajos que hemos hecho en clase
 
 Contenido:
 
