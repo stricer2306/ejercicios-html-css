@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Clase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #2e5b37;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        th {
+            background-color: #3b6e4e;
+            color: white;
+            padding: 12px;
+        }
+        .hora {
+            font-weight: bold;
+            background-color: #f8f9fa;
+            width: 130px;
+        }
+        /* Fila de Recreo continua */
+        .recreo {
+            background-color: #ffe082;
+            font-weight: bold;
+            color: #5d4037;
+            letter-spacing: 2px;
+        }
+        /* Colores para cada asignatura */
+        .appweb   { background-color: #d1ecf1; color: #0c5460; } /* Azul claro */
+        .proyecto { background-color: #e8daef; color: #512e5f; } /* Morado suave */
+        .sistemas { background-color: #f8d7da; color: #721c24; } /* Rojo claro */
+        .seguridad{ background-color: #d4edda; color: #155724; } /* Verde claro */
+        .ipe2     { background-color: #d0ece7; color: #117864; } /* Turquesa */
+        .servicios{ background-color: #fdebd0; color: #7e5109; } /* Naranja suave */
+        .ingles   { background-color: #fff3cd; color: #856404; } /* Amarillo */
+        .optativa { background-color: #e2e3e5; color: #383d41; } /* Gris */
+
+        .footer-info {
+            margin-top: 30px;
+        }
+        .gif-container img {
+            margin-top: 15px;
+            max-width: 200px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Horario de Clase</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 15:15 - 16:15 -->
+            <tr>
+                <td class="hora">15:15 - 16:15</td>
+                <td class="appweb" rowspan="2">Aplicaciones web</td>
+                <td class="seguridad" rowspan="2">Seguridad Informatica</td>
+                <td class="ingles" rowspan="2">Ingles</td>
+                <td class="sistemas" rowspan="3">Sistemas Operativos en Red</td>
+                <td class="optativa" rowspan="3">Optativa</td>
+            </tr>
+            <!-- 16:15 - 17:15 -->
+            <tr>
+                <td class="hora">16:15 - 17:15</td>
+            </tr>
+            <!-- 17:15 - 18:15 -->
+            <tr>
+                <td class="hora">17:15 - 18:15</td>
+                <td class="proyecto">Proyecto Intermodular</td>
+                <td class="ipe2">IPE II</td>
+                <td class="ipe2">IPE II</td>
+            </tr>
+
+            <!-- RECREO -->
+            <tr>
+                <td class="hora">18:15 - 18:30</td>
+                <td colspan="5" class="recreo">Recreo</td>
+            </tr>
+
+            <!-- 18:30 - 19:30 -->
+            <tr>
+                <td class="hora">18:30 - 19:30</td>
+                <td class="sistemas" rowspan="3">Sistemas Operativos en Red</td>
+                <td class="ipe2">IPE II</td>
+                <td class="proyecto">Proyecto Intermodular</td>
+                <td class="servicios">Servicios en Red</td>
+                <td class="servicios" rowspan="3">Servicios en Red</td>
+            </tr>
+            <!-- 19:30 - 20:30 -->
+            <tr>
+                <td class="hora">19:30 - 20:30</td>
+                <td class="servicios" rowspan="2">Servicios en Red</td>
+                <td class="appweb" rowspan="2">Aplicaciones Web</td>
+                <td class="seguridad" rowspan="2">Seguridad Informatica</td>
+            </tr>
+            <!-- 20:30 - 21:30 -->
+            <tr>
+                <td class="hora">20:30 - 21:30</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer-info">
+        <h2>Sergio Trigo Ceres</h2>
+        <div class="gif-container">
+            <img src="https://static2.klipy.com/ii/35ccce3d852f7995dd2da910f2abd795/a0/22/QuoiIdbg.gif" alt="GIF Animado">
+        </div>
+    </div>
+
+</body>
+</html>

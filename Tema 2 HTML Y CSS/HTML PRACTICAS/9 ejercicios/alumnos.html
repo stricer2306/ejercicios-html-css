@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de alumnos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        /* Clases para el fondo verde (aprobado) y rojo (suspenso) */
+        .aprobado {
+            background-color: #d4edda;
+            color: #155724;
+            font-weight: bold;
+        }
+        .suspenso {
+            background-color: #f8d7da;
+            color: #721c24;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Listado de alumnos</h1>
+
+    <table>
+        <tr>
+            <th>Número de alumnos</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Curso</th>
+            <th>Nota media</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Virginia</td>
+            <td>Montes Ruiz</td>
+            <td>SMR2</td>
+            <td class="aprobado">9</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Juan</td>
+            <td>León Perez</td>
+            <td>SMR2</td>
+            <td class="aprobado">8</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Lucía</td>
+            <td>García Moreno</td>
+            <td>SMR2</td>
+            <td class="suspenso">4.5</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Carlos</td>
+            <td>Pérez Ruiz</td>
+            <td>SMR2</td>
+            <td class="aprobado">6.2</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Sofía</td>
+            <td>Martínez García</td>
+            <td>SMR2</td>
+            <td class="suspenso">3.8</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Alejandro</td>
+            <td>Gómez Aviles</td>
+            <td>SMR2</td>
+            <td class="aprobado">7.0</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Elena</td>
+            <td>Ruiz</td>
+            <td>SMR2</td>
+            <td class="aprobado">9.5</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>David</td>
+            <td>Sánchez Castaño</td>
+            <td>SMR2</td>
+            <td class="suspenso">4.0</td>
+        </tr>
+    </table>
+
+</body>
+</html>

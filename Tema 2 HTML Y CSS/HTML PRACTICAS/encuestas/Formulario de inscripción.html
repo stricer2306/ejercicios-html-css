@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Inscripción</title>
+</head>
+<body style="background-color: rgb(161, 241, 215);">
+    <h2 style="color: rgb(133, 115, 248);">Formulario de Inscripción</h2>
+
+    
+    <form action="Exito.html" method="get">
+        
+        
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellidos">Apellidos:</label><br>
+        <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+     
+        <label for="dni">DNI:</label><br>
+        <input type="text" id="dni" name="dni" required><br><br>
+
+        
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label><br>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+       
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required><br><br>
+
+       
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        
+        <label for="ciclo">Ciclo formativo en el que está matriculado:</label><br>
+        <input type="text" id="ciclo" name="ciclo" required><br><br>
+
+        <hr>
+
+       
+        <p><strong>Turno preferido:</strong></p>
+        <input type="radio" id="manana" name="turno" value="mañana" required>
+        <label for="manana">Mañana</label><br>
+        
+        <input type="radio" id="tarde" name="turno" value="tarde">
+        <label for="tarde">Tarde</label><br><br>
+
+        <hr>
+
+        
+        <p><strong>Modalidad:</strong></p>
+        <input type="radio" id="presencial" name="modalidad" value="presencial" required>
+        <label for="presencial">Presencial</label><br>
+        
+        <input type="radio" id="semipresencial" name="modalidad" value="semipresencial">
+        <label for="semipresencial">Semipresencial</label><br>
+        
+        <input type="radio" id="online" name="modalidad" value="online">
+        <label for="online">Online</label><br><br>
+
+        <hr>
+
+     
+        <input type="checkbox" id="privacidad" name="privacidad" required>
+        <label for="privacidad">Acepto la política de privacidad</label><br><br>
+
+      
+        <button type="submit">Inscribirse</button>
+
+    </form>
+
+</body>
+</html>

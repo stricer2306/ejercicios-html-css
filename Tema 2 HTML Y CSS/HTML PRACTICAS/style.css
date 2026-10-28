@@ -1,0 +1,33 @@
+      p {
+            color: rgb(80, 0, 104);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 80%;
+            border: 2px solid powderblue;
+            padding: 15px;
+
+        }
+
+
+        .paddingGrande {
+            color: tomato;
+            padding: 30px;
+
+        }
+
+
+
+        .paddingPequeño {
+            color: aqua;
+            padding: 3px;
+        }
+
+
+        .borderGrande {
+            border: 30px;
+            color: black;
+        }
+
+        .borderPequeño {
+            border: 3px;
+            color: brown;
+        }

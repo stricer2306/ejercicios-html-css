@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta de Satisfacción</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f1b5d3; color: #333; }
+        h2 { color: #4a154b; }
+        hr { border: none; height: 2px; background-color: #7c4dff; margin: 20px 0; }
+        form, table { background-color: #fff; padding: 15px; border-radius: 6px; }
+        form { max-width: 500px; }
+        fieldset, table { border: 2px solid #7c4dff; }
+        legend { font-weight: bold; color: #4a154b; padding: 0 5px; }
+        input[type="text"], select, textarea { width: 95%; padding: 5px; margin: 3px 0 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #7c4dff; padding: 8px; text-align: left; }
+        th { background-color: #e8eaf6; color: #1a237e; }
+
+        .val-alta { background-color: #d4edda; color: #155724; font-weight: bold; padding: 3px 8px; border-radius: 3px; display: inline-block; }
+        .val-media { background-color: #ffeeba; color: #856404; font-weight: bold; padding: 3px 8px; border-radius: 3px; display: inline-block; }
+        .val-baja { background-color: #f8d7da; color: #721c24; font-weight: bold; padding: 3px 8px; border-radius: 3px; display: inline-block; }
+    </style>
+</head>
+<body>
+
+    <h2>Encuesta de Satisfacción</h2>
+
+    <form action="Satisfacion.html" method="post">
+        <fieldset>
+            <legend>Datos de la Encuesta</legend>
+
+            <label for="cliente">Nombre del cliente (opcional):</label><br>
+            <input type="text" id="cliente" name="cliente"><br>
+
+            <label for="servicio">Servicio utilizado:</label><br>
+            <select id="servicio" name="servicio" required>
+                <option value="">-- Selecciona un servicio --</option>
+                <option value="Reparación">Reparación</option>
+                <option value="Instalación">Instalación</option>
+                <option value="Mantenimiento">Mantenimiento</option>
+            </select><br><br>
+
+            <label for="valoracion">Valoración general (1 a 5):</label><br>
+            <input type="number" id="valoracion" name="valoracion" min="1" max="5" required><br><br>
+
+            <p>Aspectos que más le han gustado:</p>
+            <input type="checkbox" id="atencion" name="aspectos" value="atencion"> <label for="atencion">Atención</label>
+            <input type="checkbox" id="rapidez" name="aspectos" value="rapidez"> <label for="rapidez">Rapidez</label>
+            <input type="checkbox" id="precio" name="aspectos" value="precio"> <label for="precio">Precio</label>
+            <input type="checkbox" id="calidad" name="aspectos" value="calidad"> <label for="calidad">Calidad</label><br><br>
+
+            <p>¿Recomendaría el servicio?</p>
+            <input type="radio" id="rec_si" name="recomienda" value="Sí" required> <label for="rec_si">Sí</label>
+            <input type="radio" id="rec_no" name="recomienda" value="No"> <label for="rec_no">No</label><br><br>
+
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+        </fieldset>
+
+        <br>
+        <button type="submit">Enviar Encuesta</button>
+        <button type="reset">Limpiar Campos</button>
+    </form>
+
+    <hr>
+
+    <h2>Resultados de Encuestas</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Servicio</th>
+                <th>Valoración</th>
+                <th>Recomienda</th>
+                <th>Comentarios</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Ana</td><td>Reparación</td><td><span class="val-alta">5</span></td><td>Sí</td><td>Muy buen servicio</td></tr>
+            <tr><td>Pedro</td><td>Instalación</td><td><span class="val-alta">4</span></td><td>Sí</td><td>Rápido y eficaz</td></tr>
+            <tr><td>Lucía</td><td>Reparación</td><td><span class="val-media">3</span></td><td>No</td><td>Tardaron demasiado</td></tr>
+            <tr><td>Carlos</td><td>Mantenimiento</td><td><span class="val-alta">5</span></td><td>Sí</td><td>Excelente atención</td></tr>
+            <tr><td>Elena</td><td>Instalación</td><td><span class="val-baja">2</span></td><td>No</td><td>Precio elevado</td></tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
